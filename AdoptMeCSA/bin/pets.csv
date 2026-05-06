@@ -1,0 +1,33 @@
+petId,name,species,breed,age,energyLevel,specialNeeds,daysInShelter,urgencyScore,isVaccinated,isNeutered,goodWithKids,goodWithDogs,goodWithCats,experienceRequired
+P001,Biscuit,Dog,Labrador,3,High,None,45,8,true,true,true,true,false,Beginner
+P002,Shadow,Cat,Domestic Shorthair,5,Low,Asthma,62,9,true,true,false,false,true,Intermediate
+P003,Mango,Dog,Chihuahua,2,Medium,None,12,4,true,true,false,false,false,Beginner
+P004,Luna,Cat,Maine Coon,4,Medium,None,30,6,true,true,true,false,true,Beginner
+P005,Rex,Dog,German Shepherd,6,High,Anxiety,90,10,true,true,false,false,false,Experienced
+P006,Pebbles,Rabbit,Holland Lop,1,Low,None,8,3,true,false,true,false,false,Beginner
+P007,Noodle,Cat,Siamese,3,High,None,22,5,true,true,false,false,true,Intermediate
+P008,Bear,Dog,Golden Retriever,5,High,Hip Dysplasia,55,8,true,true,true,true,false,Intermediate
+P009,Cleo,Cat,Persian,7,Low,Kidney Disease,78,10,true,true,true,false,true,Experienced
+P010,Ziggy,Dog,Beagle,2,High,None,15,4,true,true,true,true,false,Beginner
+P011,Willow,Dog,Border Collie,4,High,None,40,7,true,true,false,true,false,Intermediate
+P012,Finn,Cat,Tabby,1,High,None,5,2,false,false,true,false,true,Beginner
+P013,Rosie,Dog,Pug,3,Low,Breathing Issues,50,8,true,true,true,false,false,Intermediate
+P014,Ace,Dog,Pit Bull Mix,5,High,Anxiety,85,10,true,true,false,false,false,Experienced
+P015,Daisy,Cat,Calico,2,Medium,None,18,4,true,true,true,false,true,Beginner
+P016,Oreo,Dog,Dalmatian,1,High,None,10,3,true,false,true,true,false,Intermediate
+P017,Maple,Rabbit,Flemish Giant,2,Low,None,25,5,true,false,true,false,false,Beginner
+P018,Titan,Dog,Rottweiler,4,High,None,60,9,true,true,false,false,false,Experienced
+P019,Pearl,Cat,Russian Blue,6,Low,Diabetes,95,10,true,true,true,false,true,Experienced
+P020,Chip,Dog,Dachshund,3,Medium,Back Problems,35,7,true,true,true,false,false,Intermediate
+P021,Hazel,Dog,Cocker Spaniel,2,Medium,None,20,4,true,true,true,true,false,Beginner
+P022,Smoky,Cat,British Shorthair,5,Low,None,42,7,true,true,true,false,true,Beginner
+P023,Bolt,Dog,Whippet,3,High,None,14,4,true,true,false,true,false,Intermediate
+P024,Fern,Rabbit,Mini Rex,1,Low,None,7,2,true,false,true,false,false,Beginner
+P025,Coco,Dog,Poodle,4,Medium,None,28,6,true,true,true,false,true,Beginner
+P026,Jasper,Cat,Bengal,2,High,None,16,4,true,false,false,false,false,Intermediate
+P027,Stella,Dog,Australian Shepherd,3,High,None,38,7,true,true,false,true,false,Intermediate
+P028,Mocha,Cat,Ragdoll,5,Low,None,52,8,true,true,true,false,true,Beginner
+P029,Bruno,Dog,Basset Hound,6,Low,Ear Infections,70,9,true,true,true,false,false,Intermediate
+P030,Ivy,Cat,Tortoiseshell,3,Medium,None,22,5,true,true,true,false,true,Beginner
+P031,Zeus,Dog,Husky,4,High,Escape Artist,80,10,true,true,false,true,false,Experienced
+\
