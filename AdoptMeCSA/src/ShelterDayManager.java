@@ -8,14 +8,14 @@
  */
 public class ShelterDayManager {
 
-    // ── Constants  ───────────────────────────────
+    // Constants
     private static final int MAX_DAILY_TIME     = 100; // total staff time per day
     private static final int BASE_MATCH_COST    = 20;  // base time cost per match
     private static final int SPECIAL_NEEDS_COST = 15;  // extra cost for special needs pets
     private static final int HIGH_ENERGY_COST   = 10;  // extra cost for high energy pets
     private static final int MAX_DAYS           = 7;   // simulation runs for 7 days
 
-    // ── State ─────────────────────────────────────────────────────────────────
+    // State 
     private int timeRemaining;
     private int currentDay;
     private boolean shelterClosed;
