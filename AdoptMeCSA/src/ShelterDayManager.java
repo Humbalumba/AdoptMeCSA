@@ -1,3 +1,4 @@
+import java.util.*;
 /**
  * Manages the shelter's daily resources and progression system.
  * Responsibilities:
@@ -96,7 +97,6 @@ public class ShelterDayManager {
         }
     }
 
-    // ── Getters ───────────────────────────────────────────────────────────────
 
     /**
      * Returns the staff time remaining today.

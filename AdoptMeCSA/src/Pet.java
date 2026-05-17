@@ -8,12 +8,14 @@ public class Pet {
     //pet info
 	private String name;
 	private String species;
+	private String breed;
 	private int age;
 	private String sizeCategory;
 	private String energyLevel; 
 	private boolean vaccinated;
 	private boolean neutered;
 	private boolean specialNeeds;
+	private String specialNeedsDescription;
 	private boolean goodWithKids;
 	private boolean goodWithDogs;
 	private boolean goodWithCats;
@@ -21,9 +23,9 @@ public class Pet {
 
 	// Shelter-specific
 	private int daysInShelter;
-	private int urgencyScore; // 0-10
+	private int urgencyScore; 
 
-	//compatibility score (0.0 - 100.0)
+	//compatibility score 
 	private double compatibilityScore;
 
 	public Pet() {
@@ -53,12 +55,52 @@ public class Pet {
 		this.energyLevel = energyLevel;
 	}
 
+	/**
+	 * Makes a Pet from a CSV row with the following columns:
+	 * name,species,breed,age,energyLevel,specialNeeds,daysInShelter,urgencyScore,
+	 * isVaccinated,isNeutered,goodWithKids,goodWithDogs,goodWithCats,experienceRequired
+	 */
+	public Pet(String name,
+			   String species,
+			   String breed,
+			   int age,
+			   String energyLevel,
+			   String specialNeedsDescription,
+			   int daysInShelter,
+			   int urgencyScore,
+			   boolean isVaccinated,
+			   boolean isNeutered,
+			   boolean goodWithKids,
+			   boolean goodWithDogs,
+			   boolean goodWithCats,
+			   String experienceRequired) {
+		this();
+		this.name = name;
+		this.species = species;
+		this.breed = breed;
+		this.age = age;
+		this.energyLevel = energyLevel;
+		this.specialNeedsDescription = specialNeedsDescription;
+		this.specialNeeds = specialNeedsDescription != null && !specialNeedsDescription.equalsIgnoreCase("None");
+		this.daysInShelter = daysInShelter;
+		this.urgencyScore = urgencyScore;
+		this.vaccinated = isVaccinated;
+		this.neutered = isNeutered;
+		this.goodWithKids = goodWithKids;
+		this.goodWithDogs = goodWithDogs;
+		this.goodWithCats = goodWithCats;
+		this.experienceRequired = experienceRequired;
+	}
+
 	
 	public String getName() { return name; }
 	public void setName(String name) { this.name = name; }
 
 	public String getSpecies() { return species; }
 	public void setSpecies(String species) { this.species = species; }
+
+	public String getBreed() { return breed; }
+	public void setBreed(String breed) { this.breed = breed; }
 
 	public int getAge() { return age; }
 	public void setAge(int age) { this.age = age; }
@@ -77,6 +119,12 @@ public class Pet {
 
 	public boolean hasSpecialNeeds() { return specialNeeds; }
 	public void setSpecialNeeds(boolean specialNeeds) { this.specialNeeds = specialNeeds; }
+
+	public String getSpecialNeedsDescription() { return specialNeedsDescription; }
+	public void setSpecialNeedsDescription(String desc) {
+		this.specialNeedsDescription = desc;
+		this.specialNeeds = desc != null && !desc.equalsIgnoreCase("None");
+	}
 
 	public boolean isGoodWithKids() { return goodWithKids; }
 	public void setGoodWithKids(boolean goodWithKids) { this.goodWithKids = goodWithKids; }
